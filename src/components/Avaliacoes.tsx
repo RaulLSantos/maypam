@@ -3,7 +3,7 @@
 const reviews = [
   {
     name: 'RAUL TESTESTEST',
-    service: 'Troca de óleo e revisão preventiva',
+    service: 'Troca de óleo e REVISAAAAOOOO',
     text: 'Avaliação real do Google será inserida aqui. Serviço realizado com excelência, equipe atenciosa e preço justo.',
     stars: 5,
   },
