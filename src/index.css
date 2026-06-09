@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-brand-dark antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans;
+  }
+}
+
+@layer components {
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-brand-dark leading-tight;
+  }
+
+  .section-subtitle {
+    @apply text-brand-gray-text text-base md:text-lg leading-relaxed;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-brand-red text-white font-semibold px-6 py-3 transition-all duration-200 hover:bg-brand-red-dark active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 border-2 border-brand-dark text-brand-dark font-semibold px-6 py-3 transition-all duration-200 hover:bg-brand-dark hover:text-white active:scale-95;
+  }
+
+  .btn-whatsapp {
+    @apply inline-flex items-center gap-2 bg-[#25D366] text-white font-semibold px-6 py-3 transition-all duration-200 hover:bg-[#1EBE59] active:scale-95;
+  }
+
+  .red-line {
+    @apply w-12 h-1 bg-brand-red;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
