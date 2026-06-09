@@ -24,3 +24,4 @@ dist-ssr
 *.key
 id_rsa*
 *_deploy_rsa*
+/.vs
