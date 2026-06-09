@@ -1,8 +1,8 @@
-import { Star, Quote } from 'lucide-react';
+﻿import { Star, Quote } from 'lucide-react';
 
 const reviews = [
   {
-    name: 'Nome do cliente',
+    name: 'RAUL TESTESTEST',
     service: 'Troca de óleo e revisão preventiva',
     text: 'Avaliação real do Google será inserida aqui. Serviço realizado com excelência, equipe atenciosa e preço justo.',
     stars: 5,
