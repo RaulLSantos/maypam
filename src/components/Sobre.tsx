@@ -1,4 +1,5 @@
-import { CheckCircle2, MapPin, Award } from 'lucide-react';
+import { CheckCircle2, MapPin } from 'lucide-react';
+import sobreMecanicoServico from '../assets/sobre-mecanico-servico.jpg';
 
 const highlights = [
   '10 anos de atuação em Cascavel - PR',
@@ -35,7 +36,7 @@ export default function Sobre() {
               </div>
               <div className="overflow-hidden aspect-square">
                 <img
-                  src="https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&dpr=1"
+                  src={sobreMecanicoServico}
                   alt="Mecânico realizando serviço de manutenção automotiva"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   loading="lazy"

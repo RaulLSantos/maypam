@@ -42,10 +42,10 @@ export default function Localizacao() {
                 <div>
                   <p className="text-[12px] font-semibold text-brand-gray-text uppercase tracking-wider mb-1">Telefone / WhatsApp</p>
                   <a
-                    href="tel:+554533068530"
+                    href="tel:+5545999386063"
                     className="text-[14px] font-medium text-brand-dark hover:text-brand-red transition-colors"
                   >
-                    (45) 3306-8530
+                    (45) 99938-6063
                   </a>
                 </div>
               </div>

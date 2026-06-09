@@ -48,7 +48,7 @@ function PrivacyModal({ onClose }: { onClose: () => void }) {
           <h3 className="font-bold text-brand-dark">WhatsApp</h3>
           <p>Ao utilizar o formulário de orçamento, o visitante será direcionado ao WhatsApp da Maypam Auto Center. Esse redirecionamento é feito com consentimento explícito do usuário.</p>
           <h3 className="font-bold text-brand-dark">Contato</h3>
-          <p>Dúvidas sobre esta política podem ser enviadas pelo WhatsApp (45) 3306-8530 ou presencialmente na Av. Assunção, 295 - Alto Alegre, Cascavel - PR.</p>
+          <p>Dúvidas sobre esta política podem ser enviadas pelo WhatsApp (45) 99938-6063 ou presencialmente na Av. Assunção, 295 - Alto Alegre, Cascavel - PR.</p>
         </div>
       </div>
     </div>
@@ -78,7 +78,7 @@ function TermsModal({ onClose }: { onClose: () => void }) {
           <h3 className="font-bold text-brand-dark">Propriedade intelectual</h3>
           <p>Todo o conteúdo deste site, incluindo textos, logotipo e identidade visual, é de propriedade da Maypam Auto Center e não pode ser reproduzido sem autorização.</p>
           <h3 className="font-bold text-brand-dark">Contato</h3>
-          <p>Dúvidas sobre estes termos podem ser enviadas pelo WhatsApp (45) 3306-8530.</p>
+          <p>Dúvidas sobre estes termos podem ser enviadas pelo WhatsApp (45) 99938-6063.</p>
         </div>
       </div>
     </div>
@@ -125,8 +125,8 @@ export default function Footer() {
                 </div>
                 <div className="flex items-center gap-2">
                   <Phone size={13} className="text-brand-red flex-shrink-0" />
-                  <a href="tel:+554533068530" className="text-white/50 text-[12.5px] hover:text-white transition-colors">
-                    (45) 3306-8530
+                  <a href="tel:+5545999386063" className="text-white/50 text-[12.5px] hover:text-white transition-colors">
+                    (45) 99938-6063
                   </a>
                 </div>
                 <div className="flex items-center gap-2">
@@ -179,7 +179,7 @@ export default function Footer() {
                 Solicite orçamento, tire dúvidas ou agende seu atendimento diretamente pelo WhatsApp.
               </p>
               <a
-                href="https://wa.me/554533068530?text=Olá%2C+Maypam+Auto+Center!+Gostaria+de+solicitar+um+orçamento."
+                href="https://wa.me/5545999386063?text=Olá%2C+Maypam+Auto+Center!+Gostaria+de+solicitar+um+orçamento."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-[#25D366] text-white text-[13px] font-semibold px-4 py-2.5 hover:bg-[#1EBE59] transition-colors"

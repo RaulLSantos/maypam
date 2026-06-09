@@ -1,4 +1,4 @@
-import { CheckCircle2, Users, Wrench, Shield, ScanLine, MessageSquare } from 'lucide-react';
+import { Users, Wrench, Shield, ScanLine, MessageSquare } from 'lucide-react';
 
 const items = [
   {

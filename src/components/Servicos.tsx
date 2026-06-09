@@ -9,6 +9,8 @@ import {
   Wind,
   Circle,
   ScanLine,
+  BadgeCheck,
+  MessageCircle,
 } from 'lucide-react';
 
 const servicos = [
@@ -85,16 +87,45 @@ export default function Servicos() {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-0 border border-brand-gray-border">
-          {servicos.map(({ icon: Icon, name, desc }, idx) => (
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-0 border-l border-t border-brand-gray-border">
+          <div className="sm:col-span-2 lg:col-span-3 xl:col-span-2 p-6 lg:p-8 bg-brand-gray-light border-r border-b border-brand-red/70 ring-1 ring-inset ring-brand-red/20 relative overflow-hidden group">
+            <div className="absolute top-0 left-0 h-1 w-full bg-brand-red" />
+            <div className="flex flex-col h-full">
+              <div className="flex items-start justify-between gap-4 mb-5">
+                <div className="w-11 h-11 flex items-center justify-center bg-white border border-brand-red/30 group-hover:bg-brand-red transition-colors duration-200">
+                  <BadgeCheck size={20} className="text-brand-red group-hover:text-white transition-colors duration-200" />
+                </div>
+                <span className="inline-flex items-center border border-brand-red/30 bg-white px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-brand-red">
+                  Serviço especializado
+                </span>
+              </div>
+
+              <h3 className="text-[20px] lg:text-[22px] font-bold text-brand-dark mb-3 leading-tight">
+                Troca de óleo de câmbio automático
+              </h3>
+              <p className="text-[13.5px] lg:text-sm text-brand-gray-text leading-relaxed">
+                Substituição do fluido do câmbio automático com atenção às especificações do fabricante, ajudando a preservar o desempenho, reduzir desgastes e aumentar a vida útil do sistema.
+              </p>
+              <p className="mt-4 text-[12px] font-semibold text-brand-dark">
+                Serviço técnico com mais segurança e cuidado para veículos automáticos.
+              </p>
+
+              <a
+                href="https://wa.me/5545999386063?text=Ol%C3%A1%2C+gostaria+de+consultar+sobre+troca+de+%C3%B3leo+de+c%C3%A2mbio+autom%C3%A1tico."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 inline-flex w-fit items-center gap-2 border border-brand-red bg-white px-4 py-2 text-[12px] font-bold uppercase tracking-wide text-brand-red transition-colors duration-200 hover:bg-brand-red hover:text-white"
+              >
+                <MessageCircle size={15} />
+                Consultar via WhatsApp
+              </a>
+            </div>
+          </div>
+
+          {servicos.map(({ icon: Icon, name, desc }) => (
             <div
               key={name}
-              className={`p-6 border-brand-gray-border hover:bg-brand-gray-light transition-colors duration-200 group cursor-default
-                ${idx % 5 !== 4 ? 'lg:border-r' : ''}
-                ${idx < 5 ? 'lg:border-b' : ''}
-                ${idx % 2 !== 1 ? 'sm:border-r lg:border-r-0' : ''}
-                ${idx < servicos.length - 2 ? 'border-b sm:border-b' : ''}
-              `}
+              className="p-6 border-r border-b border-brand-gray-border hover:bg-brand-gray-light transition-colors duration-200 group cursor-default"
             >
               <div className="w-9 h-9 flex items-center justify-center bg-brand-gray-light border border-brand-gray-border mb-4 group-hover:bg-brand-red group-hover:border-brand-red transition-colors duration-200">
                 <Icon size={17} className="text-brand-red group-hover:text-white transition-colors duration-200" />
@@ -111,7 +142,7 @@ export default function Servicos() {
             <p className="text-brand-gray-text text-sm mt-0.5">Entre em contato e consulte disponibilidade com nossa equipe.</p>
           </div>
           <a
-            href="https://wa.me/554533068530?text=Olá%2C+gostaria+de+verificar+a+disponibilidade+de+um+serviço."
+            href="https://wa.me/5545999386063?text=Olá%2C+gostaria+de+verificar+a+disponibilidade+de+um+serviço."
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary text-sm whitespace-nowrap flex-shrink-0"

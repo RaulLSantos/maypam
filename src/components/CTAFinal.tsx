@@ -20,7 +20,7 @@ export default function CTAFinal() {
         </p>
 
         <a
-          href="https://wa.me/554533068530?text=Olá%2C+Maypam+Auto+Center!+Gostaria+de+solicitar+um+orçamento."
+          href="https://wa.me/5545999386063?text=Olá%2C+Maypam+Auto+Center!+Gostaria+de+solicitar+um+orçamento."
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2.5 bg-white text-brand-red font-bold px-8 py-4 text-[15px] hover:bg-brand-gray-light transition-colors active:scale-95"
@@ -30,7 +30,7 @@ export default function CTAFinal() {
         </a>
 
         <p className="text-white/50 text-xs mt-6">
-          Av. Assunção, 295 - Alto Alegre, Cascavel - PR &bull; (45) 3306-8530
+          Av. Assunção, 295 - Alto Alegre, Cascavel - PR &bull; (45) 99938-6063
         </p>
       </div>
     </section>

@@ -1,11 +1,14 @@
+import galeriaBoxesAtendimento from '../assets/galeria-boxes-atendimento.jpg';
+import galeriaElevadoresAutomotivos from '../assets/galeria-elevadores-automotivos.jpg';
+
 const images = [
   {
-    src: 'https://images.pexels.com/photos/3807386/pexels-photo-3807386.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
+    src: galeriaBoxesAtendimento,
     alt: 'Boxes de serviço da Maypam Auto Center',
     label: 'Boxes de atendimento',
   },
   {
-    src: 'https://images.pexels.com/photos/4489748/pexels-photo-4489748.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
+    src: galeriaElevadoresAutomotivos,
     alt: 'Mecânico trabalhando em veículo levantado no elevador',
     label: 'Elevadores automotivos',
   },

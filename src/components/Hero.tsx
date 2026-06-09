@@ -1,7 +1,8 @@
 import { ArrowRight, MessageCircle, Shield, Clock, Truck, Star } from 'lucide-react';
+import heroImage from '../assets/hero-maypam-oficina.jpg';
 
 const WHATSAPP_URL =
-  'https://wa.me/554533068530?text=Olá%2C+Maypam+Auto+Center!+Gostaria+de+solicitar+um+orçamento.';
+  'https://wa.me/5545999386063?text=Olá%2C+Maypam+Auto+Center!+Gostaria+de+solicitar+um+orçamento.';
 
 const badges = [
   { icon: Clock, value: '10 anos', label: 'de mercado' },
@@ -74,7 +75,7 @@ export default function Hero() {
         {/* Right: Image */}
         <div className="relative overflow-hidden order-1 lg:order-2 min-h-[280px] sm:min-h-[360px] lg:min-h-full">
           <img
-            src="https://images.pexels.com/photos/3806249/pexels-photo-3806249.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&dpr=1"
+            src={heroImage}
             alt="Mecânico realizando manutenção em veículo na Maypam Auto Center"
             className="absolute inset-0 w-full h-full object-cover"
             loading="eager"

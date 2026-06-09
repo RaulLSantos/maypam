@@ -1,0 +1,12 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=$HOME/public_html/
+    - /bin/mkdir -p $DEPLOYPATH
+    - /bin/rm -rf $DEPLOYPATH/assets
+    - /bin/rm -rf $DEPLOYPATH/node_modules $DEPLOYPATH/src $DEPLOYPATH/components $DEPLOYPATH/lib $DEPLOYPATH/.git
+    - /bin/find $DEPLOYPATH -maxdepth 1 -type f \( -name '*.html' -o -name '*.css' -o -name '*.js' \) -delete
+    - /bin/cp -f dist/index.html $DEPLOYPATH
+    - /bin/find dist -maxdepth 1 -type f \( -name '*.css' -o -name '*.js' \) -exec /bin/cp -f {} $DEPLOYPATH \;
+    - if [ -f dist/.htaccess ]; then /bin/cp -f dist/.htaccess $DEPLOYPATH; fi
+    - /bin/cp -R dist/assets $DEPLOYPATH/assets

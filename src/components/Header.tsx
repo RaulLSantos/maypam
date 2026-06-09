@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Phone, ChevronDown } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 
 const navLinks = [
   { label: 'Início', href: '#inicio' },
@@ -80,14 +80,14 @@ export default function Header() {
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center gap-3">
             <a
-              href="tel:+554533068530"
+              href="tel:+5545999386063"
               className="flex items-center gap-1.5 text-[13px] font-medium text-brand-gray-text hover:text-brand-red transition-colors"
             >
               <Phone size={14} />
-              (45) 3306-8530
+              (45) 99938-6063
             </a>
             <a
-              href="https://wa.me/554533068530?text=Olá%2C+Maypam+Auto+Center!+Gostaria+de+solicitar+um+orçamento."
+              href="https://wa.me/5545999386063?text=Olá%2C+Maypam+Auto+Center!+Gostaria+de+solicitar+um+orçamento."
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary text-sm py-2.5 px-5"
@@ -126,14 +126,14 @@ export default function Header() {
           ))}
           <div className="pt-3 flex flex-col gap-2">
             <a
-              href="tel:+554533068530"
+              href="tel:+5545999386063"
               className="flex items-center gap-2 py-2.5 text-sm font-medium text-brand-gray-text"
             >
               <Phone size={15} />
-              (45) 3306-8530
+              (45) 99938-6063
             </a>
             <a
-              href="https://wa.me/554533068530?text=Olá%2C+Maypam+Auto+Center!+Gostaria+de+solicitar+um+orçamento."
+              href="https://wa.me/5545999386063?text=Olá%2C+Maypam+Auto+Center!+Gostaria+de+solicitar+um+orçamento."
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary text-sm text-center justify-center"

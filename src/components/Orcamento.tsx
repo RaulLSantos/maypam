@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Send, MessageCircle } from 'lucide-react';
 
-const WHATSAPP_NUMBER = '554533068530';
+const WHATSAPP_NUMBER = '5545999386063';
 
 const servicesOptions = [
   'Troca de óleo',
@@ -87,7 +87,7 @@ export default function Orcamento() {
             <div className="mt-8 bg-brand-dark p-5 flex items-center gap-3">
               <MessageCircle size={20} className="text-brand-yellow flex-shrink-0" />
               <div>
-                <p className="text-white text-sm font-semibold">WhatsApp: (45) 3306-8530</p>
+                <p className="text-white text-sm font-semibold">WhatsApp: (45) 99938-6063</p>
                 <p className="text-white/50 text-xs mt-0.5">Atendimento presencial e online</p>
               </div>
             </div>
