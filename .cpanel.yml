@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=$HOME/public_html/maypam/
+    - export DEPLOYPATH=$HOME/maypam.com.br/
     - /bin/mkdir -p $DEPLOYPATH
     - /bin/rm -rf $DEPLOYPATH/assets
     - /bin/rm -rf $DEPLOYPATH/node_modules $DEPLOYPATH/src $DEPLOYPATH/components $DEPLOYPATH/lib $DEPLOYPATH/.git
