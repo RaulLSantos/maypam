@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Send, MessageCircle } from 'lucide-react';
+import { MessageCircle, Send } from 'lucide-react';
 
 const WHATSAPP_NUMBER = '5545999386063';
 
@@ -19,7 +19,6 @@ const servicesOptions = [
 
 interface FormData {
   nome: string;
-  telefone: string;
   veiculo: string;
   servico: string;
   mensagem: string;
@@ -28,7 +27,6 @@ interface FormData {
 export default function Orcamento() {
   const [form, setForm] = useState<FormData>({
     nome: '',
-    telefone: '',
     veiculo: '',
     servico: '',
     mensagem: '',
@@ -42,16 +40,15 @@ export default function Orcamento() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const message = `Olá, Maypam Auto Center! Gostaria de solicitar um orçamento.\n\nNome: ${form.nome}\nTelefone: ${form.telefone}\nVeículo: ${form.veiculo}\nServiço desejado: ${form.servico}\nMensagem: ${form.mensagem}`;
+    const message = `Olá, Maycon, vim pelo site! Gostaria de solicitar um orçamento.\n\nNome: ${form.nome}\nVeículo: ${form.veiculo}\nServiço desejado: ${form.servico}\nMensagem: ${form.mensagem}`;
     const encoded = encodeURIComponent(message);
-    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encoded}`, '_blank');
+    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encoded}`, '_blank', 'noopener,noreferrer');
   };
 
   return (
     <section id="orcamento" className="bg-brand-gray-light py-16 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-          {/* Left: Info */}
           <div>
             <div className="flex items-center gap-3 mb-5">
               <div className="red-line" />
@@ -74,7 +71,7 @@ export default function Orcamento() {
                 { title: 'Orçamento sem compromisso', desc: 'Solicite o orçamento sem compromisso. Só aprovamos o serviço com sua confirmação.' },
                 { title: 'Busca de veículos disponível', desc: 'Podemos buscar e entregar seu veículo mediante agendamento.' },
               ].map(({ title, desc }) => (
-                <div key={title} className="flex items-start gap-3 bg-white border border-brand-gray-border p-4">
+                <div key={title} className="surface-card flex items-start gap-3 p-4">
                   <div className="w-1.5 h-1.5 bg-brand-red rounded-full mt-2 flex-shrink-0" />
                   <div>
                     <p className="text-[13.5px] font-bold text-brand-dark">{title}</p>
@@ -84,7 +81,7 @@ export default function Orcamento() {
               ))}
             </div>
 
-            <div className="mt-8 bg-brand-dark p-5 flex items-center gap-3">
+            <div className="mt-8 rounded-lg bg-brand-dark p-5 flex items-center gap-3 shadow-xl shadow-black/10">
               <MessageCircle size={20} className="text-brand-yellow flex-shrink-0" />
               <div>
                 <p className="text-white text-sm font-semibold">WhatsApp: (45) 99938-6063</p>
@@ -93,39 +90,22 @@ export default function Orcamento() {
             </div>
           </div>
 
-          {/* Right: Form */}
-          <div className="bg-white border border-brand-gray-border p-6 lg:p-8">
+          <div className="surface-card p-6 lg:p-8">
             <h3 className="text-lg font-bold text-brand-dark mb-6">Dados para orçamento</h3>
             <form onSubmit={handleSubmit} className="space-y-4">
-              <div className="grid sm:grid-cols-2 gap-4">
-                <div>
-                  <label className="block text-[12.5px] font-semibold text-brand-dark mb-1.5 uppercase tracking-wider">
-                    Nome *
-                  </label>
-                  <input
-                    type="text"
-                    name="nome"
-                    value={form.nome}
-                    onChange={handleChange}
-                    required
-                    placeholder="Seu nome completo"
-                    className="w-full border border-brand-gray-border px-3 py-2.5 text-sm text-brand-dark placeholder:text-brand-gray-text/60 focus:outline-none focus:border-brand-red transition-colors"
-                  />
-                </div>
-                <div>
-                  <label className="block text-[12.5px] font-semibold text-brand-dark mb-1.5 uppercase tracking-wider">
-                    Telefone *
-                  </label>
-                  <input
-                    type="tel"
-                    name="telefone"
-                    value={form.telefone}
-                    onChange={handleChange}
-                    required
-                    placeholder="(45) 9 9999-9999"
-                    className="w-full border border-brand-gray-border px-3 py-2.5 text-sm text-brand-dark placeholder:text-brand-gray-text/60 focus:outline-none focus:border-brand-red transition-colors"
-                  />
-                </div>
+              <div>
+                <label className="block text-[12.5px] font-semibold text-brand-dark mb-1.5 uppercase tracking-wider">
+                  Nome *
+                </label>
+                <input
+                  type="text"
+                  name="nome"
+                  value={form.nome}
+                  onChange={handleChange}
+                  required
+                  placeholder="Seu nome completo"
+                  className="field-input"
+                />
               </div>
 
               <div>
@@ -139,7 +119,7 @@ export default function Orcamento() {
                   onChange={handleChange}
                   required
                   placeholder="Ex: Ford Ka 2019, Fiat Uno 2015..."
-                  className="w-full border border-brand-gray-border px-3 py-2.5 text-sm text-brand-dark placeholder:text-brand-gray-text/60 focus:outline-none focus:border-brand-red transition-colors"
+                  className="field-input"
                 />
               </div>
 
@@ -152,7 +132,7 @@ export default function Orcamento() {
                   value={form.servico}
                   onChange={handleChange}
                   required
-                  className="w-full border border-brand-gray-border px-3 py-2.5 text-sm text-brand-dark focus:outline-none focus:border-brand-red transition-colors bg-white appearance-none"
+                  className="field-input appearance-none"
                 >
                   <option value="" disabled>Selecione o serviço</option>
                   {servicesOptions.map((s) => (
@@ -171,7 +151,7 @@ export default function Orcamento() {
                   onChange={handleChange}
                   rows={3}
                   placeholder="Descreva o problema ou detalhe o serviço necessário..."
-                  className="w-full border border-brand-gray-border px-3 py-2.5 text-sm text-brand-dark placeholder:text-brand-gray-text/60 focus:outline-none focus:border-brand-red transition-colors resize-none"
+                  className="field-input resize-none"
                 />
               </div>
 

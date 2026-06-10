@@ -87,15 +87,16 @@ export default function Servicos() {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-0 border-l border-t border-brand-gray-border">
-          <div className="sm:col-span-2 lg:col-span-3 xl:col-span-2 p-6 lg:p-8 bg-brand-gray-light border-r border-b border-brand-red/70 ring-1 ring-inset ring-brand-red/20 relative overflow-hidden group">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 lg:gap-5">
+          <div className="sm:col-span-2 lg:col-span-3 xl:col-span-2 surface-card surface-card-hover relative overflow-hidden bg-gradient-to-br from-white via-brand-gray-light to-white p-6 lg:p-8 ring-1 ring-inset ring-brand-red/15 group">
             <div className="absolute top-0 left-0 h-1 w-full bg-brand-red" />
+            <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-brand-red/10" />
             <div className="flex flex-col h-full">
               <div className="flex items-start justify-between gap-4 mb-5">
-                <div className="w-11 h-11 flex items-center justify-center bg-white border border-brand-red/30 group-hover:bg-brand-red transition-colors duration-200">
+                <div className="w-11 h-11 flex items-center justify-center rounded-lg bg-white shadow-sm shadow-black/5 border border-brand-red/20 group-hover:bg-brand-red transition-colors duration-200">
                   <BadgeCheck size={20} className="text-brand-red group-hover:text-white transition-colors duration-200" />
                 </div>
-                <span className="inline-flex items-center border border-brand-red/30 bg-white px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-brand-red">
+                <span className="inline-flex items-center rounded-full border border-brand-red/20 bg-white px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-brand-red shadow-sm">
                   Serviço especializado
                 </span>
               </div>
@@ -114,7 +115,7 @@ export default function Servicos() {
                 href="https://wa.me/5545999386063?text=Ol%C3%A1%2C+gostaria+de+consultar+sobre+troca+de+%C3%B3leo+de+c%C3%A2mbio+autom%C3%A1tico."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-6 inline-flex w-fit items-center gap-2 border border-brand-red bg-white px-4 py-2 text-[12px] font-bold uppercase tracking-wide text-brand-red transition-colors duration-200 hover:bg-brand-red hover:text-white"
+                className="mt-6 inline-flex w-fit items-center gap-2 rounded-lg border border-brand-red bg-white px-4 py-2 text-[12px] font-bold uppercase tracking-wide text-brand-red transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-red hover:text-white hover:shadow-lg"
               >
                 <MessageCircle size={15} />
                 Consultar via WhatsApp
@@ -125,9 +126,10 @@ export default function Servicos() {
           {servicos.map(({ icon: Icon, name, desc }) => (
             <div
               key={name}
-              className="p-6 border-r border-b border-brand-gray-border hover:bg-brand-gray-light transition-colors duration-200 group cursor-default"
+              className="surface-card surface-card-hover group relative cursor-default overflow-hidden p-5 lg:p-6"
             >
-              <div className="w-9 h-9 flex items-center justify-center bg-brand-gray-light border border-brand-gray-border mb-4 group-hover:bg-brand-red group-hover:border-brand-red transition-colors duration-200">
+              <span className="absolute right-4 top-4 h-1.5 w-1.5 rounded-full bg-brand-yellow" />
+              <div className="w-9 h-9 flex items-center justify-center rounded-lg bg-brand-gray-light border border-brand-gray-mid mb-4 group-hover:bg-brand-red group-hover:border-brand-red transition-colors duration-200">
                 <Icon size={17} className="text-brand-red group-hover:text-white transition-colors duration-200" />
               </div>
               <h3 className="text-[14px] font-bold text-brand-dark mb-2 leading-snug">{name}</h3>
@@ -136,7 +138,7 @@ export default function Servicos() {
           ))}
         </div>
 
-        <div className="mt-8 bg-brand-gray-light border border-brand-gray-border p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <div className="mt-8 surface-card bg-brand-gray-light/80 p-5 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div>
             <p className="font-semibold text-brand-dark text-[15px]">Não encontrou o serviço que precisa?</p>
             <p className="text-brand-gray-text text-sm mt-0.5">Entre em contato e consulte disponibilidade com nossa equipe.</p>

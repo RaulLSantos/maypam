@@ -1,11 +1,13 @@
-import { MapPin, Phone, Clock, Navigation } from 'lucide-react';
+import { Clock, MapPin, Navigation, Phone } from 'lucide-react';
+
+const googleMapsUrl =
+  'https://www.google.com/maps/dir/?api=1&destination=Av.+Assun%C3%A7%C3%A3o,+295+-+Alto+Alegre,+Cascavel+-+PR,+85805-055';
 
 export default function Localizacao() {
   return (
     <section id="localizacao" className="bg-white py-16 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-start">
-          {/* Info */}
           <div>
             <div className="flex items-center gap-3 mb-5">
               <div className="red-line" />
@@ -22,8 +24,8 @@ export default function Localizacao() {
             </p>
 
             <div className="space-y-4 mb-8">
-              <div className="flex items-start gap-4 border border-brand-gray-border p-4 bg-brand-gray-light">
-                <div className="w-9 h-9 bg-brand-red flex items-center justify-center flex-shrink-0">
+              <div className="surface-card flex items-start gap-4 bg-brand-gray-light/70 p-4">
+                <div className="w-9 h-9 rounded-lg bg-brand-red flex items-center justify-center flex-shrink-0">
                   <MapPin size={16} className="text-white" />
                 </div>
                 <div>
@@ -35,8 +37,8 @@ export default function Localizacao() {
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 border border-brand-gray-border p-4 bg-brand-gray-light">
-                <div className="w-9 h-9 bg-brand-red flex items-center justify-center flex-shrink-0">
+              <div className="surface-card flex items-start gap-4 bg-brand-gray-light/70 p-4">
+                <div className="w-9 h-9 rounded-lg bg-brand-red flex items-center justify-center flex-shrink-0">
                   <Phone size={16} className="text-white" />
                 </div>
                 <div>
@@ -50,8 +52,8 @@ export default function Localizacao() {
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 border border-brand-gray-border p-4 bg-brand-gray-light">
-                <div className="w-9 h-9 bg-brand-red flex items-center justify-center flex-shrink-0">
+              <div className="surface-card flex items-start gap-4 bg-brand-gray-light/70 p-4">
+                <div className="w-9 h-9 rounded-lg bg-brand-red flex items-center justify-center flex-shrink-0">
                   <Clock size={16} className="text-white" />
                 </div>
                 <div>
@@ -65,7 +67,7 @@ export default function Localizacao() {
             </div>
 
             <a
-              href="https://www.google.com/maps/dir/?api=1&destination=Av.+Assunção,+295+-+Alto+Alegre,+Cascavel+-+PR,+85805-055"
+              href={googleMapsUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary inline-flex"
@@ -75,8 +77,7 @@ export default function Localizacao() {
             </a>
           </div>
 
-          {/* Map */}
-          <div className="w-full h-80 lg:h-[460px] border border-brand-gray-border overflow-hidden">
+          <div className="media-frame group relative h-80 w-full cursor-pointer overflow-hidden bg-brand-gray-light lg:h-[460px]">
             <iframe
               title="Localização Maypam Auto Center - Cascavel PR"
               src="https://maps.google.com/maps?q=Av.+Assun%C3%A7%C3%A3o+295+Alto+Alegre+Cascavel+PR&output=embed&z=16"
@@ -87,6 +88,17 @@ export default function Localizacao() {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             />
+            <a
+              href={googleMapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Abrir rota para a Maypam Auto Center no Google Maps"
+              className="absolute inset-0 z-10 bg-transparent"
+            />
+            <span className="absolute bottom-4 left-4 z-20 inline-flex items-center gap-2 rounded-full bg-white/95 px-4 py-2 text-xs font-bold uppercase tracking-wide text-brand-dark shadow-lg shadow-black/15 transition-transform group-hover:-translate-y-0.5">
+              <Navigation size={14} className="text-brand-red" />
+              Abrir no mapa
+            </span>
           </div>
         </div>
       </div>

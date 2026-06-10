@@ -33,7 +33,7 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-white shadow-md border-b border-brand-gray-mid'
+          ? 'bg-white shadow-lg shadow-black/5 border-b border-brand-gray-mid'
           : 'bg-white/95 backdrop-blur-sm border-b border-transparent'
       }`}
     >
@@ -45,7 +45,7 @@ export default function Header() {
             onClick={(e) => { e.preventDefault(); handleNavClick('#inicio'); }}
             className="flex items-center gap-2.5 group"
           >
-            <div className="flex items-center justify-center w-9 h-9 bg-brand-red">
+            <div className="flex items-center justify-center w-9 h-9 rounded-lg bg-brand-red shadow-sm shadow-brand-red/25">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 2L3 7V12C3 16.55 6.84 20.74 12 22C17.16 20.74 21 16.55 21 12V7L12 2Z" fill="white" opacity="0.3"/>
                 <circle cx="12" cy="12" r="4" fill="white"/>
@@ -98,7 +98,7 @@ export default function Header() {
 
           {/* Mobile Toggle */}
           <button
-            className="lg:hidden p-2 text-brand-dark hover:text-brand-red transition-colors"
+            className="lg:hidden rounded-lg p-2 text-brand-dark hover:bg-brand-gray-light hover:text-brand-red transition-colors"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Menu"
           >
@@ -111,7 +111,7 @@ export default function Header() {
       <div
         className={`lg:hidden overflow-hidden transition-all duration-300 ${
           mobileOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
-        } bg-white border-t border-brand-gray-mid`}
+        } bg-white border-t border-brand-gray-mid shadow-xl shadow-black/5`}
       >
         <nav className="px-4 py-3 flex flex-col">
           {navLinks.map((link) => (
@@ -119,7 +119,7 @@ export default function Header() {
               key={link.href}
               href={link.href}
               onClick={(e) => { e.preventDefault(); handleNavClick(link.href); }}
-              className="py-3 text-sm font-medium text-brand-dark border-b border-brand-gray-mid last:border-0 hover:text-brand-red transition-colors"
+              className="rounded-lg px-3 py-3 text-sm font-medium text-brand-dark hover:bg-brand-gray-light hover:text-brand-red transition-colors"
             >
               {link.label}
             </a>

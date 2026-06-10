@@ -22,7 +22,7 @@ export default function Sobre() {
           {/* Images grid */}
           <div className="relative order-2 lg:order-1">
             <div className="grid grid-cols-2 gap-3">
-              <div className="col-span-2 overflow-hidden aspect-[16/8]">
+              <div className="media-frame col-span-2 overflow-hidden aspect-[16/8] group">
                 <img
                   src={sobreFerramentasEquipamentos}
                   alt="Interior da Maypam Auto Center com área de trabalho organizada"
@@ -30,7 +30,7 @@ export default function Sobre() {
                   loading="lazy"
                 />
               </div>
-              <div className="overflow-hidden aspect-square">
+              <div className="media-frame overflow-hidden aspect-square group">
                 <img
                   src={sobreOficinaMaypam}
                   alt="Ferramentas e equipamentos automotivos profissionais"
@@ -38,7 +38,7 @@ export default function Sobre() {
                   loading="lazy"
                 />
               </div>
-              <div className="overflow-hidden aspect-square">
+              <div className="media-frame overflow-hidden aspect-square group">
                 <img
                   src={sobreMecanicoServico}
                   alt="Mecânico realizando serviço de manutenção automotiva"
@@ -48,7 +48,7 @@ export default function Sobre() {
               </div>
             </div>
             {/* Floating stat */}
-            <div className="absolute -bottom-4 -right-4 bg-brand-red text-white p-5 shadow-xl">
+            <div className="absolute -bottom-4 -right-4 rounded-lg bg-brand-red text-white p-5 shadow-xl shadow-brand-red/25">
               <p className="text-4xl font-bold leading-none">10</p>
               <p className="text-sm font-medium opacity-90 mt-1">anos de<br />experiência</p>
             </div>
@@ -81,16 +81,16 @@ export default function Sobre() {
               com a mesma seriedade.
             </p>
 
-            <div className="grid sm:grid-cols-2 gap-x-6 gap-y-3 mb-8">
+            <div className="grid sm:grid-cols-2 gap-3 mb-8">
               {highlights.map((item) => (
-                <div key={item} className="flex items-start gap-2.5">
+                <div key={item} className="flex items-start gap-2.5 rounded-lg bg-brand-gray-light/80 px-3 py-2.5">
                   <CheckCircle2 size={16} className="text-brand-red flex-shrink-0 mt-0.5" />
                   <span className="text-[13.5px] text-brand-dark font-medium leading-snug">{item}</span>
                 </div>
               ))}
             </div>
 
-            <div className="flex items-center gap-4 pt-6 border-t border-brand-gray-mid">
+            <div className="surface-card flex items-center gap-4 bg-brand-gray-light/80 p-4">
               <div className="flex items-center gap-2 text-sm text-brand-gray-text">
                 <MapPin size={15} className="text-brand-red flex-shrink-0" />
                 Av. Assunção, 295 - Alto Alegre, Cascavel - PR

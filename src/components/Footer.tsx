@@ -40,7 +40,7 @@ function PrivacyModal({ onClose }: { onClose: () => void }) {
           <p><strong className="text-brand-dark">Maypam Auto Center</strong> — Última atualização: junho de 2025</p>
           <p>A Maypam Auto Center respeita a privacidade de seus clientes e visitantes. Esta política descreve como tratamos as informações coletadas neste site.</p>
           <h3 className="font-bold text-brand-dark">Informações coletadas</h3>
-          <p>Este site pode coletar informações fornecidas voluntariamente pelo visitante por meio do formulário de orçamento, como nome, telefone, modelo do veículo e descrição do serviço desejado. Essas informações são utilizadas exclusivamente para fins de contato e prestação de serviços.</p>
+          <p>Este site pode coletar informações fornecidas voluntariamente pelo visitante por meio do formulário de orçamento, como nome, modelo do veículo e descrição do serviço desejado. Essas informações são utilizadas exclusivamente para fins de contato e prestação de serviços.</p>
           <h3 className="font-bold text-brand-dark">Uso das informações</h3>
           <p>As informações fornecidas são utilizadas para responder solicitações de orçamento, prestar atendimento ao cliente e melhorar nossos serviços. Não compartilhamos dados pessoais com terceiros para fins comerciais.</p>
           <h3 className="font-bold text-brand-dark">Cookies</h3>

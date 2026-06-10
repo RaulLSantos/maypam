@@ -26,19 +26,35 @@
   }
 
   .btn-primary {
-    @apply inline-flex items-center gap-2 bg-brand-red text-white font-semibold px-6 py-3 transition-all duration-200 hover:bg-brand-red-dark active:scale-95;
+    @apply inline-flex items-center gap-2 rounded-lg bg-brand-red text-white font-semibold px-6 py-3 shadow-sm shadow-brand-red/20 transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-red-dark hover:shadow-lg hover:shadow-brand-red/20 active:scale-95;
   }
 
   .btn-secondary {
-    @apply inline-flex items-center gap-2 border-2 border-brand-dark text-brand-dark font-semibold px-6 py-3 transition-all duration-200 hover:bg-brand-dark hover:text-white active:scale-95;
+    @apply inline-flex items-center gap-2 rounded-lg border-2 border-brand-dark text-brand-dark font-semibold px-6 py-3 transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-dark hover:text-white hover:shadow-lg active:scale-95;
   }
 
   .btn-whatsapp {
-    @apply inline-flex items-center gap-2 bg-[#25D366] text-white font-semibold px-6 py-3 transition-all duration-200 hover:bg-[#1EBE59] active:scale-95;
+    @apply inline-flex items-center gap-2 rounded-lg bg-[#25D366] text-white font-semibold px-6 py-3 shadow-sm shadow-[#25D366]/20 transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#1EBE59] hover:shadow-lg hover:shadow-[#25D366]/20 active:scale-95;
   }
 
   .red-line {
-    @apply w-12 h-1 bg-brand-red;
+    @apply w-12 h-1 rounded-full bg-brand-red;
+  }
+
+  .surface-card {
+    @apply rounded-lg border border-brand-gray-mid/80 bg-white shadow-sm shadow-black/5 transition-all duration-200;
+  }
+
+  .surface-card-hover {
+    @apply hover:-translate-y-1 hover:shadow-xl hover:shadow-black/10;
+  }
+
+  .media-frame {
+    @apply rounded-lg border border-white/60 shadow-xl shadow-black/15;
+  }
+
+  .field-input {
+    @apply w-full rounded-lg border border-brand-gray-border bg-white px-3 py-2.5 text-sm text-brand-dark shadow-sm shadow-black/5 transition-colors placeholder:text-brand-gray-text/60 focus:border-brand-red focus:outline-none focus:ring-2 focus:ring-brand-red/10;
   }
 }
 

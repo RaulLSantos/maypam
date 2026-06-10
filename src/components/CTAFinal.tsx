@@ -4,7 +4,7 @@ export default function CTAFinal() {
   return (
     <section className="bg-brand-red py-16 lg:py-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="inline-block bg-white/10 px-4 py-1.5 mb-6">
+        <div className="inline-block rounded-full bg-white/10 px-4 py-1.5 mb-6 ring-1 ring-white/10">
           <span className="text-white/80 text-[11px] font-semibold uppercase tracking-widest">
             Atendimento técnico e profissional
           </span>
@@ -23,7 +23,7 @@ export default function CTAFinal() {
           href="https://wa.me/5545999386063?text=Olá%2C+Maypam+Auto+Center!+Gostaria+de+solicitar+um+orçamento."
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2.5 bg-white text-brand-red font-bold px-8 py-4 text-[15px] hover:bg-brand-gray-light transition-colors active:scale-95"
+          className="inline-flex items-center gap-2.5 rounded-lg bg-white text-brand-red font-bold px-8 py-4 text-[15px] shadow-xl shadow-black/15 transition-all hover:-translate-y-0.5 hover:bg-brand-gray-light active:scale-95"
         >
           <MessageCircle size={19} />
           Falar no WhatsApp

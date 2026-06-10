@@ -35,7 +35,7 @@ const items = [
 
 export default function Diferenciais() {
   return (
-    <section className="bg-brand-gray-light py-16 lg:py-20">
+    <section className="bg-gradient-to-b from-brand-gray-light to-white py-16 lg:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12">
           <div className="flex items-center gap-3 mb-4">
@@ -49,13 +49,14 @@ export default function Diferenciais() {
           </h2>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-brand-gray-border">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5">
           {items.map(({ icon: Icon, title, desc }) => (
             <div
               key={title}
-              className="bg-white p-7 hover:shadow-md transition-shadow duration-200 group"
+              className="surface-card surface-card-hover group relative overflow-hidden p-6 lg:p-7"
             >
-              <div className="w-11 h-11 bg-brand-gray-light border border-brand-gray-border flex items-center justify-center mb-5 group-hover:bg-brand-red group-hover:border-brand-red transition-colors duration-200">
+              <div className="absolute right-0 top-0 h-20 w-20 rounded-bl-full bg-brand-red/[0.04]" />
+              <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-lg border border-brand-red/10 bg-brand-red/[0.06] transition-colors duration-200 group-hover:bg-brand-red">
                 <Icon size={20} className="text-brand-red group-hover:text-white transition-colors duration-200" />
               </div>
               <h3 className="text-[15px] font-bold text-brand-dark mb-2">{title}</h3>
