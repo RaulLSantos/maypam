@@ -1,48 +1,48 @@
-import { useEffect, useMemo, useState } from 'react';
+﻿import { useEffect, useMemo, useState } from 'react';
 import { ChevronLeft, ChevronRight, ExternalLink, Quote, Star } from 'lucide-react';
 
 const reviews = [
   {
-    name: 'Nome do cliente',
+    name: 'Luiz Roberto',
     rating: 5,
-    service: 'Troca de óleo',
-    text: 'Texto da avaliação real será inserido aqui. Atendimento claro, serviço bem executado e equipe cuidadosa com o veículo.',
-    googleReviewUrl: 'INSERIR_LINK_DA_AVALIACAO_AQUI',
+    //service: 'Troca de óleo',
+    text: 'Empresa honesta de qualidade e profissionais qualificados. Preço justo com peças de qualidade. Proprietário muito honesto e qualificado para a função',
+    googleReviewUrl: 'https://share.google/UOnoPacyzjr9elBte',
   },
   {
-    name: 'Nome do cliente',
+    name: 'Marco Aurélio',
     rating: 5,
-    service: 'Revisão preventiva',
-    text: 'Texto da avaliação real será inserido aqui. Diagnóstico preciso e explicação transparente antes da aprovação do serviço.',
-    googleReviewUrl: 'INSERIR_LINK_DA_AVALIACAO_AQUI',
+    //service: 'Revisão preventiva',
+    text: 'Ótimo atendimento e serviço de qualidade! Equipe honesta, rápida e muito profissional. Mecânica de confiança — recomendo! 👏🔧',
+    googleReviewUrl: 'https://share.google/ZoKiPcfAWxwVhJ4Cm',
   },
   {
-    name: 'Nome do cliente',
+    name: 'Fábio Júnior Assessoria',
     rating: 5,
-    service: 'Freios',
-    text: 'Texto da avaliação real será inserido aqui. Serviço entregue no prazo combinado e com atenção aos detalhes de segurança.',
-    googleReviewUrl: 'INSERIR_LINK_DA_AVALIACAO_AQUI',
+    //service: 'Freios',
+    text: 'Trabalho de qualidade e honestidade',
+    googleReviewUrl: 'https://share.google/9dl8ppwfaoQs2QYIh',
   },
   {
-    name: 'Nome do cliente',
+    name: 'Antonio Cézar Figueiro',
     rating: 5,
-    service: 'Suspensão',
-    text: 'Texto da avaliação real será inserido aqui. Atendimento profissional, orçamento bem explicado e resultado confiável.',
-    googleReviewUrl: 'INSERIR_LINK_DA_AVALIACAO_AQUI',
+    //service: 'Suspensão',
+    text: 'Mecânicos especializados, bom atendimento e preços justos.',
+    googleReviewUrl: 'https://share.google/VOeSGPKsvM4B7M7hn',
   },
   {
-    name: 'Nome do cliente',
+    name: 'Jessica marina Overbeck',
     rating: 5,
-    service: 'Injeção eletrônica',
-    text: 'Texto da avaliação real será inserido aqui. Problema identificado com scanner e resolvido de forma objetiva.',
-    googleReviewUrl: 'INSERIR_LINK_DA_AVALIACAO_AQUI',
+    //service: 'Injeção eletrônica',
+    text: 'Ótimo atendimento,justos no preço, o serviço e muito bem feito,super recomendo..',
+    googleReviewUrl: 'https://share.google/XH6pKFuxtN6SCmZYF',
   },
   {
-    name: 'Nome do cliente',
+    name: 'Nadiégi Ziemer',
     rating: 5,
-    service: 'Ar-condicionado',
-    text: 'Texto da avaliação real será inserido aqui. Equipe atenciosa, oficina organizada e comunicação simples pelo WhatsApp.',
-    googleReviewUrl: 'INSERIR_LINK_DA_AVALIACAO_AQUI',
+    //service: 'Ar-condicionado',
+    text: 'Atendimento incrível, pessoal muito atencioso. Me explicaram certinho coisas que outras mecânicas facilmente "passariam a perna". Ganharam uma cliente!!!!!',
+    googleReviewUrl: 'https://share.google/rssaj8hTv9Xl3aYLk',
   },
 ];
 
