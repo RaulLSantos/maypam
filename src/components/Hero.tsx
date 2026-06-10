@@ -66,7 +66,7 @@ export default function Hero() {
                 ))}
               </div>
               <span className="text-sm text-brand-gray-text font-medium">
-                Avaliação 5 estrelas no Google
+                Avaliação 4,7 estrelas no Google
               </span>
             </div>
           </div>

@@ -5,42 +5,42 @@ const reviews = [
   {
     name: 'Luiz Roberto',
     rating: 5,
-    //service: 'Troca de óleo',
+    service: 'Troca de óleo',
     text: 'Empresa honesta de qualidade e profissionais qualificados. Preço justo com peças de qualidade. Proprietário muito honesto e qualificado para a função',
     googleReviewUrl: 'https://share.google/UOnoPacyzjr9elBte',
   },
   {
     name: 'Marco Aurélio',
     rating: 5,
-    //service: 'Revisão preventiva',
+    service: 'Revisão preventiva',
     text: 'Ótimo atendimento e serviço de qualidade! Equipe honesta, rápida e muito profissional. Mecânica de confiança — recomendo! 👏🔧',
     googleReviewUrl: 'https://share.google/ZoKiPcfAWxwVhJ4Cm',
   },
   {
     name: 'Fábio Júnior Assessoria',
     rating: 5,
-    //service: 'Freios',
+    service: 'Freios',
     text: 'Trabalho de qualidade e honestidade',
     googleReviewUrl: 'https://share.google/9dl8ppwfaoQs2QYIh',
   },
   {
     name: 'Antonio Cézar Figueiro',
     rating: 5,
-    //service: 'Suspensão',
+    service: 'Suspensão',
     text: 'Mecânicos especializados, bom atendimento e preços justos.',
     googleReviewUrl: 'https://share.google/VOeSGPKsvM4B7M7hn',
   },
   {
     name: 'Jessica marina Overbeck',
     rating: 5,
-    //service: 'Injeção eletrônica',
+    service: 'Injeção eletrônica',
     text: 'Ótimo atendimento,justos no preço, o serviço e muito bem feito,super recomendo..',
     googleReviewUrl: 'https://share.google/XH6pKFuxtN6SCmZYF',
   },
   {
     name: 'Nadiégi Ziemer',
     rating: 5,
-    //service: 'Ar-condicionado',
+    service: 'Ar-condicionado',
     text: 'Atendimento incrível, pessoal muito atencioso. Me explicaram certinho coisas que outras mecânicas facilmente "passariam a perna". Ganharam uma cliente!!!!!',
     googleReviewUrl: 'https://share.google/rssaj8hTv9Xl3aYLk',
   },
@@ -99,7 +99,7 @@ export default function Avaliacoes() {
           </div>
           <div className="surface-card flex items-center gap-3 px-5 py-4 lg:flex-shrink-0">
             <div className="flex flex-col items-center">
-              <span className="text-3xl font-bold text-brand-dark">5,0</span>
+              <span className="text-3xl font-bold text-brand-dark">4,7</span>
               <div className="flex gap-0.5 mt-1">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} size={12} className="fill-brand-yellow text-brand-yellow" />
@@ -174,9 +174,6 @@ export default function Avaliacoes() {
           </button>
         </div>
 
-        <p className="text-center text-xs text-brand-gray-text mt-8">
-          Substitua os campos googleReviewUrl pelos links reais de cada avaliação no Google Maps.
-        </p>
       </div>
     </section>
   );
