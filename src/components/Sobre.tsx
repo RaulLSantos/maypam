@@ -1,5 +1,9 @@
-import { CheckCircle2, MapPin } from 'lucide-react';
+﻿import { CheckCircle2, MapPin } from 'lucide-react';
 import sobreMecanicoServico from '../assets/sobre-mecanico-servico.jpg';
+import sobreOficinaMaypam from '../assets/sobre-oficina-maypam.jpg';
+import sobreFerramentasEquipamentos from '../assets/sobre-ferramentas-equipamentos.jpg';
+
+
 
 const highlights = [
   '10 anos de atuação em Cascavel - PR',
@@ -20,7 +24,7 @@ export default function Sobre() {
             <div className="grid grid-cols-2 gap-3">
               <div className="col-span-2 overflow-hidden aspect-[16/8]">
                 <img
-                  src="https://images.pexels.com/photos/4489794/pexels-photo-4489794.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&dpr=1"
+                  src={sobreFerramentasEquipamentos}
                   alt="Interior da Maypam Auto Center com área de trabalho organizada"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   loading="lazy"
@@ -28,7 +32,7 @@ export default function Sobre() {
               </div>
               <div className="overflow-hidden aspect-square">
                 <img
-                  src="https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&dpr=1"
+                  src={sobreOficinaMaypam}
                   alt="Ferramentas e equipamentos automotivos profissionais"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   loading="lazy"

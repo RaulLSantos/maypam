@@ -1,5 +1,9 @@
-import galeriaBoxesAtendimento from '../assets/galeria-boxes-atendimento.jpg';
+﻿import galeriaBoxesAtendimento from '../assets/galeria-boxes-atendimento.jpg';
 import galeriaElevadoresAutomotivos from '../assets/galeria-elevadores-automotivos.jpg';
+import galeriaEquipamentosTecnicos from '../assets/galeria-equipamentos-diagnostico.jpg';
+import galeriaAreaAtendimento from '../assets/galeria-recepcao-atendimento.jpg';
+
+
 
 const images = [
   {
@@ -13,12 +17,12 @@ const images = [
     label: 'Elevadores automotivos',
   },
   {
-    src: 'https://images.pexels.com/photos/1148017/pexels-photo-1148017.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
+    src: galeriaEquipamentosTecnicos,
     alt: 'Ferramentas e equipamentos de diagnóstico',
     label: 'Equipamentos técnicos',
   },
   {
-    src: 'https://images.pexels.com/photos/3807395/pexels-photo-3807395.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
+    src: galeriaAreaAtendimento,
     alt: 'Área de recepção e atendimento ao cliente',
     label: 'Área de atendimento',
   },
