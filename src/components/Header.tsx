@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+﻿import { useState, useEffect } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
 
 const navLinks = [
@@ -6,8 +6,9 @@ const navLinks = [
   { label: 'Serviços', href: '#servicos' },
   { label: 'Sobre', href: '#sobre' },
   { label: 'Avaliações', href: '#avaliacoes' },
-  { label: 'Localização', href: '#localizacao' },
   { label: 'Orçamento', href: '#orcamento' },
+  { label: 'Localização', href: '#localizacao' },
+  
 ];
 
 export default function Header() {

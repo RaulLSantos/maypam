@@ -1,4 +1,4 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { Phone, MapPin, Clock, X } from 'lucide-react';
 
 const navLinks = [
@@ -6,8 +6,9 @@ const navLinks = [
   { label: 'Serviços', href: '#servicos' },
   { label: 'Sobre', href: '#sobre' },
   { label: 'Avaliações', href: '#avaliacoes' },
-  { label: 'Localização', href: '#localizacao' },
   { label: 'Orçamento', href: '#orcamento' },
+  { label: 'Localização', href: '#localizacao' },
+
 ];
 
 const services = [
