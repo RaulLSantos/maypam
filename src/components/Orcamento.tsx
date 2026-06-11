@@ -1,4 +1,4 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { MessageCircle, Send } from 'lucide-react';
 
 const WHATSAPP_NUMBER = '5545999386063';
@@ -65,21 +65,21 @@ export default function Orcamento() {
               as informações já preenchidas.
             </p>
 
-            <div className="space-y-4">
-              {[
-                { title: 'Resposta rápida', desc: 'Nossa equipe retorna o orçamento em poucos minutos durante o horário de atendimento.' },
-                { title: 'Orçamento sem compromisso', desc: 'Solicite o orçamento sem compromisso. Só aprovamos o serviço com sua confirmação.' },
-                { title: 'Busca de veículos disponível', desc: 'Podemos buscar e entregar seu veículo mediante agendamento.' },
-              ].map(({ title, desc }) => (
-                <div key={title} className="surface-card flex items-start gap-3 p-4">
-                  <div className="w-1.5 h-1.5 bg-brand-red rounded-full mt-2 flex-shrink-0" />
-                  <div>
-                    <p className="text-[13.5px] font-bold text-brand-dark">{title}</p>
-                    <p className="text-[12.5px] text-brand-gray-text mt-0.5">{desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
+            {/*<div className="space-y-4">*/}
+            {/*  {[*/}
+            {/*    { title: 'Resposta rápida', desc: 'Nossa equipe retorna o orçamento em poucos minutos durante o horário de atendimento.' },*/}
+            {/*    { title: 'Orçamento sem compromisso', desc: 'Solicite o orçamento sem compromisso. Só aprovamos o serviço com sua confirmação.' },*/}
+            {/*    { title: 'Busca de veículos disponível', desc: 'Podemos buscar e entregar seu veículo mediante agendamento.' },*/}
+            {/*  ].map(({ title, desc }) => (*/}
+            {/*    <div key={title} className="surface-card flex items-start gap-3 p-4">*/}
+            {/*      <div className="w-1.5 h-1.5 bg-brand-red rounded-full mt-2 flex-shrink-0" />*/}
+            {/*      <div>*/}
+            {/*        <p className="text-[13.5px] font-bold text-brand-dark">{title}</p>*/}
+            {/*        <p className="text-[12.5px] text-brand-gray-text mt-0.5">{desc}</p>*/}
+            {/*      </div>*/}
+            {/*    </div>*/}
+            {/*  ))}*/}
+            {/*</div>*/}
 
             <div className="mt-8 rounded-lg bg-brand-dark p-5 flex items-center gap-3 shadow-xl shadow-black/10">
               <MessageCircle size={20} className="text-brand-yellow flex-shrink-0" />
