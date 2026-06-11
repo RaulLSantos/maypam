@@ -80,7 +80,7 @@ export default function Localizacao() {
           <div className="media-frame group relative h-80 w-full cursor-pointer overflow-hidden bg-brand-gray-light lg:h-[460px]">
             <iframe
               title="Localização Maypam Auto Center - Cascavel PR"
-              src="https://maps.google.com/maps?q=Av.+Assun%C3%A7%C3%A3o+295+Alto+Alegre+Cascavel+PR&output=embed&z=16"
+              src="https://www.google.com/maps?q=Av.+Assun%C3%A7%C3%A3o+295+Alto+Alegre+Cascavel+PR&output=embed&z=16"
               width="100%"
               height="100%"
               style={{ border: 0 }}
